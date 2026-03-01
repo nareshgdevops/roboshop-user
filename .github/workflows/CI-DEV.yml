@@ -1,0 +1,10 @@
+name: CI - DEV
+on:
+  push:
+    branches:
+      - 'ROBO-**'
+jobs:
+  Build:
+    uses: nareshgdevops/roboshop-github-actions/.github/workflows/CI-DEV.yml@main
+    with:
+      appType: nodejs

@@ -1,0 +1,11 @@
+name: CI/CD - MAIN
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'main'
+jobs:
+  Build:
+    uses: nareshgdevops/roboshop-github-actions/.github/workflows/CI-main.yml@main
+    with:
+      appType: nodejs
